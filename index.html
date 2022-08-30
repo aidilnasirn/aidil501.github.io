@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CETRAK CETREK LAMPU</title>
+    <style>
+        *{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        button{
+            background: rgb(87, 76, 244);
+            border: none;
+            font-size: 14px;
+            padding: 6px;
+            color: black;
+        }
+        button:hover{
+            background: rgb(45, 196, 37);
+            border: none;
+            font-size: 14px;
+            padding: 6px;
+            transition: 0.3s;
+            color: aliceblue;
+            transform: rotate(4deg);
+        }
+        .aidil:hover{
+            background: rgb(196, 37, 42);
+            border: none;
+            font-size: 14px;
+            padding: 6px;
+            transition: 0.3s;
+            color: aliceblue;
+            transform: rotate(4deg);
+        }
+    </style>
+</head>
+<body>,<center>
+    <img src="assets\images\off.gif" alt="gambar rusak" id="lampu1" />
+    <H3>CETREKAN LAMPU ON OF </H3>
+    <button onclick="saklar('on')">Nyalakan Lampu</button>
+    <button class="aidil" onclick="saklar('off')">Matikan Lampu</button>
+
+    </center>
+    <script>
+        function saklar(aidil){
+
+        let lampu1 = document.getElementById("lampu1");
+        
+        if(aidil == "on"){
+            lampu1.src = "assets/images/on.gif";
+    
+        }
+        if(aidil == "off"){
+            lampu1.src = "assets/images/off.gif";
+
+        }
+
+        return lampu1;
+
+        }
+    </script>
+</body>
+</html>
